@@ -6,6 +6,7 @@
    * [Behave;](#https://behave.readthedocs.io/en/latest/)
    * [HTTPX;](#https://www.python-httpx.org/)
 * [API utilizada](#https://reqres.in/)
+    - https://reqres.in/
 <!--te-->
 
 ### Avisos Importantes: 
