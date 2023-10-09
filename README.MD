@@ -28,7 +28,6 @@ pip install httpx
 
 Após instalações bem sucedidas, basta rodar o comando ```behave``` dentro do projeto:
 
-<!--te-->
 
 ### Planejamento de Testes 
 
@@ -39,3 +38,12 @@ Funcionalidade: Login via API
     Cenario: Login com usuario nao cadastrado
     Cenario: Login com senham invalida
 ```
+
+### Observações
+
+Para utilização em banco de dados
+
+* Importar o sistema dentro de environment;
+* Chamar o DB conforme comentado no mesmo arquivo na linha 1;
+* Em seguida, importar a tabela dentro do arquivo api.py
+* Fazer uma query, e os devidos testes que forem necessários
