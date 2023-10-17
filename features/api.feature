@@ -10,12 +10,8 @@ Funcionalidade: Login via API
       }
     """
   Então a API retorna o status code "200"
-  E a API retorna um token
-      """
-      {
-        "token": "QpwL5tke4Pnpja7X4"
-      }
-      """
+  E a API retorna um token "QpwL5tke4Pnpja7X4"
+
 
   Cenário: Login com usuário não cadastrado
   Dado que o usuário possui uma URL base "https://reqres.in"
@@ -27,12 +23,8 @@ Funcionalidade: Login via API
       }
     """
   Então a API retorna o status code "400"
-  E a API retorna uma mensagem
-      """
-      {
-        "error": "user not found"
-      }
-      """
+  E a API retorna uma mensagem "user not found"
+
 
   Cenário: Login com senha inválida
   Dado que o usuário possui uma URL base "https://reqres.in"
@@ -44,10 +36,5 @@ Funcionalidade: Login via API
       }
     """
   Então a API retorna o status code "400"
-  E a API retorna uma mensagem
-      """
-      {
-        "error": "senha invalida"
-      }
-      """
+  E a API retorna uma mensagem "senha invalida"
 

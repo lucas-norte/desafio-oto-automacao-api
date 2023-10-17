@@ -14,7 +14,7 @@
 Para utilizar localmente
 
 <!--ts-->
-   * Precisar instalar o Behave
+   * Precisa instalar o Behave
 
  ```bash
 pip install behave
