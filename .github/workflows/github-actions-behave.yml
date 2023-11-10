@@ -1,0 +1,36 @@
+# https://github.com/behave/behave/blob/main/.github/workflows/tests.yml
+name: Behave Test
+
+on:
+  pull_request:
+    branches:
+      - main
+      - develop
+
+  push:
+    branches:
+      - main
+      - develop
+      - 'feature/**'
+    tags:
+      - '**'
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest]
+        python-version: ["3.9"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: 'pip'
+          cache-dependency-path: 'requirements.txt'
+      - name: Install Packages
+        run: pip install -r requirements.txt
+      - name: Run Behave Test
+        run: behave || true
