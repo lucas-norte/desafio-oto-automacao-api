@@ -14,30 +14,43 @@
 Para utilizar localmente
 
 <!--ts-->
-   * Precisa instalar o Behave
+* Precisa instalar o Behave
 
- ```bash
-pip install behave
-```
+    ```bash
+      pip install behave
+    ```
    
-   * Precisa instalar o HTTPX
+* Precisa instalar o HTTPX
 
- ```bash
-pip install httpx
-```
+  ```bash
+  pip install httpx
+  ```
+
+### Ou
+
+* Instalar Tudo
+
+  ```bash
+  pip install -r requirements.txt
+  ```
+___
 
 Após instalações bem sucedidas, basta rodar o comando ```behave``` dentro do projeto:
+
+  ```bash
+  behave
+  ```
 
 
 ### Planejamento de Testes 
 
- ```gherkin
-Funcionalidade: Login via API
-
-    Cenario: Login com SUCESSO
-    Cenario: Login com usuario nao cadastrado
-    Cenario: Login com senha invalida
-```
+  ```gherkin
+  Funcionalidade: Login via API
+  
+      Cenario: Login com SUCESSO
+      Cenario: Login com usuario nao cadastrado
+      Cenario: Login com senha invalida
+  ```
 
 ### Observações
 
